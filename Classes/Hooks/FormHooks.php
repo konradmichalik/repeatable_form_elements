@@ -35,8 +35,8 @@ class FormHooks
      */
     public function afterInitializeCurrentPage(
         FormRuntime $formRuntime,
-        CompositeRenderableInterface $currentPage = null,
-        CompositeRenderableInterface $lastPage = null,
+        ?CompositeRenderableInterface $currentPage = null,
+        ?CompositeRenderableInterface $lastPage = null,
         array $rawRequestArguments = [],
     ): ?CompositeRenderableInterface {
         foreach ($formRuntime->getPages() as $page) {
@@ -151,8 +151,8 @@ class FormHooks
      */
     protected function userWentBackToPreviousStep(
         FormRuntime $formRuntime,
-        CompositeRenderableInterface $currentPage = null,
-        CompositeRenderableInterface $lastPage = null,
+        ?CompositeRenderableInterface $currentPage = null,
+        ?CompositeRenderableInterface $lastPage = null,
     ): bool {
         return $currentPage !== null
                 && $lastPage !== null
