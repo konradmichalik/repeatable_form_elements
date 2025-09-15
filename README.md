@@ -15,7 +15,7 @@ finishers will be aware of the copied field(s).
 ## Preferred installation
 
 1. Require the extension via composer.
-2. Add the site set tritum/form-element-linked-checkbox to the dependencies of 
+2. Add the site set tritum/repeatable-form-elements to the dependencies of 
    your site packages site set (TYPO3 v13). Or add the static TypoScript 
    configuration to your TypoScript template (TYPO3 v12 and TYPO3 v13).
 
